@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import PastReports from "@/components/PastReports";
 import AuthStatus from "@/components/AuthStatus";
@@ -5,6 +6,17 @@ import AuthStatus from "@/components/AuthStatus";
 export default function Home() {
   return (
     <main className="flex flex-1 flex-col gap-6 px-5 py-8">
+      <div className="relative h-44 overflow-hidden rounded-3xl shadow-sm">
+        <Image
+          src="/assets/hero.png"
+          alt="창가에 놓인 화분과 아침 햇살"
+          fill
+          priority
+          sizes="(max-width: 430px) 100vw, 430px"
+          className="object-cover object-[50%_60%]"
+        />
+      </div>
+
       <section className="rounded-3xl bg-butter/60 p-6">
         <p className="text-sm text-foreground/60">MindBridge</p>
         <h1 className="mt-2 text-2xl font-bold leading-snug">안녕, 오늘 마음은 어때?</h1>
