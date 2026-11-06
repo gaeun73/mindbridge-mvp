@@ -85,6 +85,11 @@ export default function ReportView({ report: r, date }: { report: Report; date: 
           <Card title="작은 행동">{r.small_action || "-"}</Card>
         </>
       )}
+
+      <p className="px-2 text-center text-xs leading-relaxed text-foreground/50">
+        이 리포트는 AI가 생성한 자기점검 자료이며 의학적 진단이 아닙니다. 많이 힘들 땐 109 · 1577-0199 · 119로 연락해
+        주세요.
+      </p>
     </>
   );
 }

@@ -34,7 +34,12 @@ export default function Home() {
         <PastReports />
       </section>
 
-      <div className="mt-auto flex flex-col gap-2">
+      <p className="mt-auto rounded-2xl bg-black/5 px-4 py-3 text-xs leading-relaxed text-foreground/60">
+        MindBridge는 AI가 도와주는 자기점검 도구이며 의학적 진단·치료가 아니에요. 대화와 마음정리는 회원가입 없이
+        이 브라우저의 익명 계정으로 저장돼요. 많이 힘들 땐 109 · 1577-0199 · 119로 연락해 주세요.
+      </p>
+
+      <div className="flex flex-col gap-2">
         <Link href="/sos" className="text-center text-sm text-foreground/50 underline">
           도움이 필요해요 (SOS)
         </Link>
